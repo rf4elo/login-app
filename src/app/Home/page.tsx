@@ -19,11 +19,11 @@ export default async function Home() {
   }
 
   return(
-    <main className="min-h-screen flex flex-col items-center justify-center gap-5 relative " >
+    <div className="min-h-screen flex flex-col items-center justify-center gap-5 relative " >
 
       <Header userName={session.user.name} userEmail={session.user.email} />
 
       <ToDoForm/>
-    </main>
+    </div>
   )
 }
